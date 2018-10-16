@@ -14,4 +14,11 @@
     - 文件fildid 管理
     - 文件规格
     - 文件是怎么自己清理的
+    
+    
+
+文件上传要准备什么jar,不需要
+如何设置目录——可以直接复制你的路径，如果是\开头的则是相对路径，要自己在tomcat里面找
+form 表单里传数据给controller 的三个要素——1：action="/img/multiUpload"   对应 @PostMapping("/img/multiUpload")   2：声明好enctype="multipart/form-data" 3，name=file 对应controller 中的String file 
+
  

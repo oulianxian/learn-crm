@@ -26,7 +26,7 @@ public class UploadController {
     /**
      * @return
      */
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping()
     public String index() {
         return "views/img-up-down-load";
     }

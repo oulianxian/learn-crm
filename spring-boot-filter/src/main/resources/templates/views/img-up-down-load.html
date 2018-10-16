@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html   lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span>多文件上传</span>
+<form method="post" action="/img/multiUpload" enctype="multipart/form-data">
+    <input type="file" name="file"><br>
+    <input type="file" name="file"><br>
+    <input type="file" name="file"><br>
+    <input type="submit" value="提交">
+</form>
+<span>单文件上传</span>
+<form method="post" action="/img/upload" enctype="multipart/form-data">
+    <input type="file" name="file"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
