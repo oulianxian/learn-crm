@@ -15,6 +15,7 @@
         <module>learn-command-line-runner</module>
         <module>spring-boot-upload</module>
         <module>spring-boot-filter</module>
+        <module>js-alertify</module>
     </modules>
 
 

@@ -1,0 +1,35 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>提醒插件</title>
+
+</head>
+<body>
+<button id="alertBtn">点我提醒
+
+</button>
+</body>
+<script th:src="@{/alertifyjs/alertify.min.js}"></script>
+<link rel="stylesheet" th:href="@{/alertifyjs/css/alertify.css}">
+<script>
+
+    var btn = document.getElementById("alertBtn");
+    console.log(btn);
+    btn.onclick=function(){
+        // var delay = alertify.get('notifier','delay');
+        // alertify.set('notifier','delay', 10);
+        // alertify.success('Current delay : ' + alertify.get('notifier','delay') + ' seconds');
+        // alertify.set('notifier','delay', delay);
+
+
+        alertify.prompt("This is a prompt dialog.", "Default value",
+            function(evt, value ){
+                alertify.success('Ok: ' + value);
+            },
+            function(){
+                alertify.error('Cancel');
+            })
+        ;
+    }
+
+</script>
+</html>
