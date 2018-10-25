@@ -16,6 +16,8 @@
         <module>spring-boot-upload</module>
         <module>spring-boot-filter</module>
         <module>js-alertify</module>
+        <module>generator</module>
+        <module>httpclient</module>
     </modules>
 
 
