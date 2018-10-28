@@ -18,6 +18,9 @@
         <module>js-alertify</module>
         <module>generator</module>
         <module>httpclient</module>
+        <module>pickage</module>
+        <module>json-util</module>
+        <module>design-modules</module>
     </modules>
 
 

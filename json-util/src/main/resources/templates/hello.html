@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var url = "/getJson";
+            $("#submit").click(function () {
+                var name = "jack";
+                var age = 18;
+                var habby = "喝水";
+                var people = {};
+                people.name = name;
+                people.age = age;
+                people.habby = habby;
+                var formData = new FormData();
+                formData.append("people", JSON.stringify(people));     //将其转化为JSON格式并插入fromdata中
+                console.log(JSON.stringify(people));     //{"name":"jack","age":18}
+                $.ajax({
+                    url: url,
+                    type: "post",
+                    data: formData,
+                    contentType: false,
+                    processData: false, // 是否将参数序列化，如{ width:1680, height:1050}
+                    // 参数对象序列化为width=1680&height=1050这样的字符串
+                    success: function (data) {
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<button id="submit">创建对象</button>
+</body>
+</html>
