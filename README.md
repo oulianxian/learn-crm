@@ -1,10 +1,12 @@
-此项目用来学习研究crm里面用到的知识点
-
-1. 设计一个类使其在启动系统后自动运行——CommandLineRunner
-
-
-##其他
-先学第一遍，重在理解整个过程，之后抽时间进行回归。根据自己的熟练程度以及知识的难度，以及知识点密度。来判断接下来的学习方向和频率
+ 
+ 
 
 
-##代码生成器
+热加载：引入依赖
+<dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <optional>true</optional>
+</dependency>
+
+参考;https://www.cnblogs.com/jiangbei/p/8439394.html
